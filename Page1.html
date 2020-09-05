@@ -18,7 +18,7 @@ integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw
 
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
         <a class="navbar-brand d-inline p-2 ml-5 bg-dark text-white mb-0 pb-0" class="header-button" href="index.html">Homepage: Latitude Analysis</a>
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -52,55 +52,58 @@ integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw
     </ul>
         </div>
     </nav>
-    
+
+
+
+
     <div class="container">
         <div class="row", id="main-info">
-            <div class="col-md-8 col-sm-12 col-xs-12">
+            <div class="col-md-8 col-sm-12">
                 <div class="plot-content">
-                    <h1 class="plot-header">Latitude Summary</h1>
+                    <h1 class="plot-header">Temperature Analysis</h1>
                     <hr>
-                    <img src="visualization/Fig1.png" alt="City Latitude" id="landing-image">
-                    <p>This proyect has the main purpose of analyzing weather changes in certain cities as they get closer to the equator, this data has been obtained from the OpenWeatherMap API and analized via Pandas and Matplotlib.</p>
-                    <p>We analyzed factors such as:</p>
-                    <ul>
-                        <li>Temperature</li>
-                        <li>Cloudiness</li>
-                        <li>Wind Speed</li>
-                        <li>Humidity</li>
-                    </ul>
+                    <img src="visualization/Fig1.png" alt="Fig1" id="landing-image">
+                    <p>We can detect that from latitude -20 until latitude 20 we get a balanced temperature analisis (meaning both hemispheres in this area have similar weather).
+                        But as we go further north and south we can see that the temperature begins to lower, with the northern hemisphere suffering from colder temperatures during this time.
+                        This data was gathered during January 2017, which would make that the norther hemisphere would experience winter (therefore the lower temperatures) while in the southern hemisphere would be summer (therefore the higher temperatures).  </p>
                 </div>
             </div>
-            <div class="col-md-4 col-sm-12">
-                <div class="visplot-content">
-                    <h2 class="plot-header">Visualizations</h2>
-                    <hr>
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-6 col-md-3 col-sm-3 col-xs-1">
-                                <a href="Page1.html">
-                                    <img src="visualization/Fig1.png" alt="Fig1" id="vis-image">
-                                </a>
-                            </div>
-                            <div class="col-lg-6 col-md-3 col-sm-3 col-xs-1">
-                                <a href="page2.html">
-                                    <img src="visualization/Fig2.png" alt="Fig2" id="vis-image">
-                                </a>
-                            </div>
-                            <div class="col-lg-6 col-md-3 col-sm-3 col-xs-1">
-                                <a href="page3.html">
-                                    <img src="visualization/Fig3.png" alt="Fig3" id="vis-image">
-                                </a>
-                            </div>
-                            <div class="col-lg-6 col-md-3 col-sm-3 col-xs-1">
-                                <a href="page4.html">
-                                    <img src="visualization/Fig4.png" alt="Fig4" id="vis-image">
-                                </a>
-                            </div>
+
+
+
+
+
+        <div class="col-md-4 col-sm-12">
+            <div class="visplot-content">
+                <h2 class="plot-header">Visualizations</h2>
+                <hr>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-3 col-sm-3">
+                            <a href="Page1.html">
+                                <img src="visualization/Fig1.png" alt="Fig1" id="vis-image">
+                            </a>
+                        </div>
+                        <div class="col-lg-6 col-md-3 col-sm-3">
+                            <a href="page2.html">
+                                <img src="visualization/Fig2.png" alt="Fig2" id="vis-image">
+                            </a>
+                        </div>
+                        <div class="col-lg-6 col-md-3 col-sm-3">
+                            <a href="page3.html">
+                                <img src="visualization/Fig3.png" alt="Fig3" id="vis-image">
+                            </a>
+                        </div>
+                        <div class="col-lg-6 col-md-3 col-sm-3">
+                            <a href="page4.html">
+                                <img src="visualization/Fig4.png" alt="Fig4" id="vis-image">
+                            </a>
                         </div>
                     </div>
-                    
                 </div>
+            
             </div>
-        </div>
     </div>
+</div>
+</div>
 </body>
